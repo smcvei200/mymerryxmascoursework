@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyMerryXmas</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="mx_update">mx_update</string>
+    <string name="mx_favourite">mx_favourite</string>
+    <string name="mc_Map">mc_Map</string>
+    <string name="mx_Map">mx_Map</string>
+    <string name="mx_DrawActivity">mx_DrawActivity</string>
+    // String[] songs={"Jingle Bell Rock", "Merry Xmas Everybody", "Santa Baby", "All I Want For XMas is You", "FairyTale of New York"};
+</resources>

@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Merry Xmas"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffff0705"
+        android:textSize="50dp"
+        android:textStyle="bold|italic"
+        android:typeface="sans" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Are you ready for Santa?"
+        android:id="@+id/tvReindeer"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="What is on top of your xmas list?"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/tvReindeer"
+        android:layout_alignLeft="@+id/tvReindeer"
+        android:layout_alignStart="@+id/tvReindeer" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPresent"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:lines="1"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Who is your favourite Reindeer?"
+        android:id="@+id/tvSong"
+        android:layout_below="@+id/etPresent"
+        android:layout_alignLeft="@+id/etPresent"
+        android:layout_alignStart="@+id/etPresent" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reinSpin"
+        android:layout_below="@+id/tvSong"
+        android:layout_alignLeft="@+id/tvSong"
+        android:layout_alignStart="@+id/tvSong" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="What is your favourite Xmas song?"
+        android:id="@+id/tvNews"
+        android:layout_toEndOf="@+id/etPresent"
+        android:layout_toRightOf="@+id/etPresent"
+        android:layout_below="@+id/reinSpin"
+        android:layout_alignLeft="@+id/reinSpin"
+        android:layout_alignStart="@+id/reinSpin" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/songSpin"
+        android:layout_below="@+id/tvNews"
+        android:layout_alignLeft="@+id/tvNews"
+        android:layout_alignStart="@+id/tvNews" />
+
+    <TextView
+        android:id="@+id/tvArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Please select your nearest city!"
+        android:layout_below="@+id/songSpin"
+        android:layout_alignLeft="@+id/songSpin"
+        android:layout_alignStart="@+id/songSpin" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/areaSpin"
+        android:layout_below="@+id/tvArea"
+        android:layout_alignLeft="@+id/tvNews"
+        android:layout_alignStart="@+id/tvNews" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNews"
+        android:gravity="center"
+        android:text="North Pole Update!"
+        android:layout_below="@+id/areaSpin"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
